@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+
+[node name="Main" type="Node2D"]
+position = Vector2( -1.6768, -0.0160887 )
+script = ExtResource( 1 )
+
+[node name="Space invaders" type="Label" parent="."]
+margin_left = 482.281
+margin_top = 271.189
+margin_right = 525.281
+margin_bottom = 302.189
+text = "Roblox
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 398.427
+margin_top = 359.033
+margin_right = 616.427
+margin_bottom = 379.033
+text = "Start!!!!!!!!!!!!!!!!!!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

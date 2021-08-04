@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+
+[node name="Main" type="Node2D"]
+position = Vector2( -1.6768, -0.0160887 )
+script = ExtResource( 1 )
+
+[node name="Space invaders" type="Label" parent="."]
+margin_left = 191.0
+margin_top = 79.0
+margin_right = 234.0
+margin_bottom = 93.0
+rect_scale = Vector2( 17.4272, 14.901 )
+text = "u died"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 414.445
+margin_top = 335.006
+margin_right = 632.445
+margin_bottom = 355.006
+text = "respawn?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
